@@ -7,7 +7,7 @@ locals {
     hello_world = format("%s %s", "Hello", "World")
 }
 
-include {
+include "template" {
     path = find_in_parent_folders("terragrunt_template.hcl")
 }
 
